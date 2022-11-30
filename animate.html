@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    
+</head>
+<body>
+    <div id="div1" style="background-color: red;width:20%;">
+        <p>Para-1</p>
+        <h1>head</h1>
+        <span>span1</span><br>
+        
+    </div><br>
+    <button id="b1">animate</button>
+   
+</body>
+<script src="../Javascript/jquery-3.6.1.min.js"></script>
+<script>
+$(document).ready(function(){
+        $('#b1').click(function(){
+            $('#div1').animate({
+                "margin-left":"300px",
+                "margin-right":"200px"
+            },5000,function(){
+                alert("Try Again!");
+            })
+        })
+    })
+    </script>
+    </html>
